@@ -27,7 +27,7 @@ function App() {
           <Navbar bg="primary" variant="primary" className="first-navbar">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Attires Avenue</Navbar.Brand>
+                <Navbar.Brand>Attire Avenue</Navbar.Brand>
               </LinkContainer>
             </Container>
           </Navbar>
