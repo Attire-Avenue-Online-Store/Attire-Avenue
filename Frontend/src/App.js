@@ -10,6 +10,7 @@ import { useContext } from 'react';
 import { Store } from './Store';
 import Badge from 'react-bootstrap/Badge';
 import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function App() {
   const { state } = useContext(Store);
@@ -31,11 +32,50 @@ function App() {
               <p className="announcement-bar_message">GET 50% OFF</p>
             </a>
           </div>
-          <Navbar bg="primary" variant="primary" className="first-navbar">
+          <Navbar expand="lg" bg="primary" variant="primary" className="bg-body-tertiary">
             <Container>
               <LinkContainer to="/">
-                <Navbar.Brand>Attire Avenue</Navbar.Brand>
+                <Navbar.Brand href="#home">Attire Avenue</Navbar.Brand>
               </LinkContainer>
+
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link href="#home">Home</Nav.Link>
+                  <NavDropdown title="Men" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/3.1">
+                      Shorts
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.2">
+                      T-Sirts
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/3.3">
+                      Jogger Pants
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/3.4">
+                      Best Sellers
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <NavDropdown title="Women" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="#action/4.1">
+                      Legging
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/4.2">
+                      Traveller Pant
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="#action/4.3">
+                      Shorts
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action/4.4">
+                      Best Sellers
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <Nav.Link href="#questions">Questions?</Nav.Link>
+                </Nav>
+              </Navbar.Collapse>
+
               <Nav className="me-auto">
                 <Link to="/cart" className="nav-link">
                   {cart.cartItems.length > 0 && (
