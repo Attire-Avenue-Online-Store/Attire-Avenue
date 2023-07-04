@@ -32,7 +32,12 @@ function App() {
               <p className="announcement-bar_message">GET 50% OFF</p>
             </a>
           </div>
-          <Navbar expand="lg" bg="primary" variant="primary" className="bg-body-tertiary">
+          <Navbar
+            expand="lg"
+            bg="primary"
+            variant="primary"
+            className="bg-body-tertiary"
+          >
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand href="#home">Attire Avenue</Navbar.Brand>
@@ -80,7 +85,7 @@ function App() {
                 <Link to="/cart" className="nav-link">
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
-                      {cart.cartItems.length}
+                      {cart.cartItems.reduce((a, c) => a + c.quantity, 0)}
                     </Badge>
                   )}
 
