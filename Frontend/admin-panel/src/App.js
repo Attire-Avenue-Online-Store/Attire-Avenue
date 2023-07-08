@@ -56,31 +56,32 @@ function App() {
           </div>
         </div>
 
-        <div class="col">
+        <div class="col ">
           {/* Column 2 - content area*/}
-          <div class="row">
+          <div class="row ">
             {/* this bar naver change */}
             <div class="col">
-              <div className="topbar-title">
-                <span>Primary</span>
-                <h2>Dashboard</h2>
-              </div>
-            </div>
-            <div class="col">
-              <div className="search-box">
-                <i className="fa fa-search"></i>
-                <input type="text" placeholder="text" />
-              </div>
-            </div>
-            <div class="col">
-              <div>
-                <img
-                  src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1931&q=80"
-                  alt=""
-                ></img>
+              <div className="main-content">
+                <div className="header-wrapper">
+                  <div className="header-title">
+                    <span>Primary</span>
+                    <h2>Dashboard</h2>
+                  </div>
+                  <div className="user-info">
+                    <div className="search-box">
+                      <i className="fa fa-search"></i>
+                      <input type="text" placeholder="Search" />
+                    </div>
+                    <img
+                      src="https://gaveinjaz.com/wp-content/uploads/2019/12/opulent-profile-square-07.jpg"
+                      alt=""
+                    ></img>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
           <div class="row">
             <div class="col">Content Area</div>
           </div>
