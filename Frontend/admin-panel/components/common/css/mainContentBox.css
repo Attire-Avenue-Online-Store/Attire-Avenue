@@ -1,0 +1,16 @@
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #f5f6fa;
+  border-radius: 15px;
+  padding: 10px 2rem;
+  margin-bottom: 0rem;
+}
+
+.content-box {
+  background: #fff;
+  width: 100%;
+  padding: 1rem;
+}

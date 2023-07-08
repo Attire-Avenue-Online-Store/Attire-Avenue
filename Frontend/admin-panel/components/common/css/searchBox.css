@@ -1,0 +1,26 @@
+.search-box {
+  background: white;
+  border-radius: 15px;
+  color: #565757;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px;
+  margin-right: 30px;
+}
+
+.search-box input {
+  background: transparent;
+  padding: 10px;
+}
+
+.search-box i {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.search-box i:hover {
+  transform: scale(1.2);
+}

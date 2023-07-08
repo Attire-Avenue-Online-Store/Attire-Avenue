@@ -6,6 +6,12 @@ function App() {
     <div className="container-fluid">
       <div className="row d-flex">
         {/*Column 1-  sidebar */}
+        {/*
+        <div className='col-2'>
+          <div className='container-fluid bg-dark'></div>
+        </div>
+
+  */}
         <div className="col-2 bg-dark ">
           <div className="container sidebar ">
             <div className="logo"></div>
