@@ -61,8 +61,8 @@ function App() {
           <div class="row ">
             {/* this bar naver change */}
             <div class="col">
-              <div className="main-content">
-                <div className="header-wrapper">
+              <div className="content-box">
+                <div className="content-wrapper">
                   <div className="header-title">
                     <span>Primary</span>
                     <h2>Dashboard</h2>
@@ -83,7 +83,11 @@ function App() {
           </div>
 
           <div class="row">
-            <div class="col">Content Area</div>
+            <div class="col">
+              <div className="content-box">
+                <div className="content-wrapper content"></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
