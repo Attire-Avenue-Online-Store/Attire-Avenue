@@ -46,7 +46,7 @@ const Customer = (props) => {
 
   return (
     <>
-      <div className="container mt-3 mb-4">
+      <div className="container mt-3">
         <div className="row mb-4">
           <div className="col-4 ">
             <SearchBox value={globalFilter || ''} onChange={handleFilter} />
@@ -102,56 +102,59 @@ const Customer = (props) => {
         <div className="row ">
           <div className="col d-flex justify-content-end">
             <div className="pagination">
-              <button
-                className="btn btn-primary custom-button "
-                onClick={() => gotoPage(0)}
-                disabled={!canPreviousPage}
-              >
-                {<i class="fa fa-angle-double-left"></i>}
-              </button>
-              <button
-                className="btn btn-primary custom-button"
-                onClick={() => previousPage()}
-                disabled={!canPreviousPage}
-              >
-                {<i class="fa fa-angle-left"></i>}
-              </button>
-              <button
-                className="btn btn-primary custom-button"
-                onClick={() => nextPage()}
-                disabled={!canNextPage}
-              >
-                {<i class="fa fa-angle-right"></i>}
-              </button>
-              <button
-                className="btn btn-primary custom-button"
-                onClick={() => gotoPage(pageCount - 1)}
-                disabled={!canNextPage}
-              >
-                {<i class="fa fa-angle-double-right"></i>}
-              </button>
-              <div>
-                Page{' '}
-                <input
-                  type="number"
-                  value={pageIndex + 1}
-                  onChange={(e) => {
-                    const pageNumber = e.target.value
-                      ? Number(e.target.value) - 1
-                      : 0;
-                    gotoPage(pageNumber);
-                  }}
-                />{' '}
-                of {pageOptions.length}
+              <div className="pagination-buttons">
+                <button
+                  className="custom-button "
+                  onClick={() => gotoPage(0)}
+                  disabled={!canPreviousPage}
+                >
+                  {<i class="fa fa-angle-double-left"></i>}
+                </button>
+                <button
+                  className="custom-button"
+                  onClick={() => previousPage()}
+                  disabled={!canPreviousPage}
+                >
+                  {<i class="fa fa-angle-left"></i>}
+                </button>
+                <button
+                  className="custom-button"
+                  onClick={() => nextPage()}
+                  disabled={!canNextPage}
+                >
+                  {<i class="fa fa-angle-right"></i>}
+                </button>
+                <button
+                  className="custom-button"
+                  onClick={() => gotoPage(pageCount - 1)}
+                  disabled={!canNextPage}
+                >
+                  {<i class="fa fa-angle-double-right"></i>}
+                </button>
               </div>
-              <div>
+              <div className="pagination-details">
+                <span>Page </span>
+
+                <div className="input-box">
+                  <input
+                    type="number"
+                    value={pageIndex + 1}
+                    onChange={(e) => {
+                      const pageNumber = e.target.value
+                        ? Number(e.target.value) - 1
+                        : 0;
+                      gotoPage(pageNumber);
+                    }}
+                  />
+                </div>
+                <span>of {pageOptions.length}</span>
                 <select
                   value={pageSize}
                   onChange={(e) => {
                     setPageSize(Number(e.target.value));
                   }}
                 >
-                  {[10, 20, 30, 40, 50].map((size) => (
+                  {[5, 10, 20, 30, 40, 50].map((size) => (
                     <option key={size} value={size}>
                       Show {size}
                     </option>
