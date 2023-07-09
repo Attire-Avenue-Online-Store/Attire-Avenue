@@ -13,6 +13,7 @@ import SearchBox from '../../components/common/searchBox';
 const Customer = (props) => {
   const data = useMemo(() => fakeData, []);
   const columns = useMemo(() => COLUMNS, []);
+  const [selectedRows, setSelectedRows] = useState([]);
 
   const {
     getTableProps,
@@ -47,9 +48,24 @@ const Customer = (props) => {
   return (
     <>
       <div className="container mt-3">
-        <div className="row mb-4">
+        <div className="row mb-4 d-flex align-items-cente justify-content-between">
           <div className="col-4 ">
-            <SearchBox value={globalFilter || ''} onChange={handleFilter} />
+            <SearchBox
+              value={globalFilter || ''}
+              onChange={handleFilter}
+              placeholder={'Search all columns...'}
+            />
+          </div>
+          <div className="col d-flex justify-content-end align-items-center">
+            <button className="custom-button">
+              {<i class="fa fa-plus-square-o"></i>}
+            </button>
+            <button className="custom-button">
+              {<i class="fa fa-pencil-square-o"></i>}
+            </button>
+            <button className="custom-button">
+              {<i class="fa fa-trash-o"></i>}
+            </button>
           </div>
         </div>
         <div className="row mb-4">

@@ -20,7 +20,7 @@ function App() {
             <>
               <HeaderTitle windowName={'Dashboard'} />
               <div className="user-info">
-                <SearchBox />
+                <SearchBox placeholder={'Global search...'} />
                 <MiniProfileImage
                   imgUrl={
                     'https://gaveinjaz.com/wp-content/uploads/2019/12/opulent-profile-square-07.jpg'
