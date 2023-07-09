@@ -1,0 +1,62 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100vh;
+  padding: 0 1.7rem;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+
+.logo {
+  height: 80px;
+  padding: 16px;
+}
+
+.menu {
+  height: 88%;
+  position: relative;
+  list-style: none;
+  padding: 0;
+}
+
+.menu-button {
+  padding-left: 10px;
+}
+
+.menu li {
+  padding: 1.3rem;
+  margin: 8px 0;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu li:hover,
+.active {
+  background: #e0e0e038;
+}
+
+.menu a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.menu a span {
+  overflow: hidden;
+}
+
+.menu a i {
+  font-size: 1rem;
+}
+
+.btn-settings {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}

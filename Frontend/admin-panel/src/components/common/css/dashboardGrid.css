@@ -1,0 +1,9 @@
+.header-title {
+  color: #212529;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1;
+}
