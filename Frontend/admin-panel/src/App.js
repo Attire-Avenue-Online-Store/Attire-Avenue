@@ -4,6 +4,7 @@ import SearchBox from './components/common/searchBox';
 import MiniProfileImage from './components/common/miniProfileImage';
 import HeaderTitle from './components/common/headerTitle';
 import DashboardGrid from './components/common/dashboardGrid';
+import Customer from './pages/customers/customer';
 
 import './App.css';
 
@@ -30,7 +31,7 @@ function App() {
           }
         ></MainContentBox>
       }
-      content={<MainContentBox />}
+      content={<MainContentBox content={<Customer />} />}
     />
   );
 }
