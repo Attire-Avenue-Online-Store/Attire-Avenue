@@ -172,6 +172,12 @@ $ npm start
     2. npm install jsonwebtoken
     3. define generateToken
 23. Complete Signin Screen
+
     1. handle submit action
     2. save token in store and local storage
     3. show user name in header
+
+24. Create Shipping Screen
+    1. create form inputs
+    2. handle save shipping address
+    3. add checkout wizard bar
