@@ -12,7 +12,7 @@ const User = (props) => {
     <ReactTable
       rowData={data}
       columnData={columns}
-      tablePageSize={5}
+      tablePageSize={10}
       tablePageIndex={0}
     />
   );

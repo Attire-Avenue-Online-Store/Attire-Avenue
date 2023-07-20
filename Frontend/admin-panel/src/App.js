@@ -1,4 +1,4 @@
-import { Route, Redirect, Switch } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Sidebar from './components/sidebar/sidebar';
 import MainContentBox from './components/common/mainContentBox';
 import SearchBox from './components/common/searchBox';
@@ -15,14 +15,18 @@ import './App.css';
 function App() {
   const [headerTitle, setHeaderTitle] = useState('Dashboard');
 
+  const handleTopBarTitle = (name) => {
+    setHeaderTitle(name);
+  };
+
   return (
     // body
 
     <DashboardGrid
-      sidebar={<Sidebar />}
+      sidebar={<Sidebar onClick={handleTopBarTitle} />}
       topbar={
         <MainContentBox>
-          <HeaderTitle windowName={'Dashboard'} />
+          <HeaderTitle windowName={headerTitle} />
           <div className="user-info">
             <SearchBox placeholder={'Global search...'} />
             <MiniProfileImage
@@ -35,17 +39,10 @@ function App() {
       }
       content={
         <MainContentBox>
-          <Switch>
-            <Route path="/register" component={RegisterForm} />
-            <Route path="/login" component={LoginForm} />
-            <Route path="/movies/:id" component={MovieForm} />
-            <Route path="/movies" component={Movies} />
-            <Route path="/customers" component={Customers} />
-            <Route path="/rentals" component={Rentals} />
-            <Route path="/not-found" component={NotFound} />
-            <Redirect from="/" exact to="/movies" />
-            <Redirect to="/not-found" />
-          </Switch>
+          <Routes>
+            <Route path="/customers" component={Customer} />
+            <Route path="/users" component={User} />
+          </Routes>
           <Customer />
         </MainContentBox>
       }
