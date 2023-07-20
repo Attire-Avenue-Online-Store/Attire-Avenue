@@ -4,7 +4,7 @@ import './css/headerTitle.css';
 const HeaderTitle = ({ windowName }) => {
   return (
     <div className="header-title">
-      <span>Primary</span>
+      <span>Admin</span>
       <h2>{windowName}</h2>
     </div>
   );

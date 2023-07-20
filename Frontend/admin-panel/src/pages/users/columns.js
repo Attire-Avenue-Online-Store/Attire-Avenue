@@ -1,5 +1,3 @@
-import FilterForm from '../../hooks/filterForm';
-
 export const COLUMNS = [
   {
     Header: 'ID',
@@ -14,12 +12,16 @@ export const COLUMNS = [
     accessor: 'lastName',
   },
   {
+    Header: 'Phone',
+    accessor: 'phone',
+  },
+  {
     Header: 'Email',
     accessor: 'email',
   },
   {
-    Header: 'Phone',
-    accessor: 'phone',
+    Header: 'Role',
+    accessor: 'role',
   },
   {
     Header: 'Address',

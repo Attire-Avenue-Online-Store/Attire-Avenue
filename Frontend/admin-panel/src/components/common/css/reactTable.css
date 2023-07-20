@@ -1,0 +1,93 @@
+table {
+  width: 100%;
+  height: auto;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+th {
+  padding: 15px 15px 15px 25px;
+  color: #fff;
+  font-weight: 600;
+}
+td {
+  padding: 15px 15px 15px 25px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #212529;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+th {
+  text-align: left;
+}
+thead th {
+  background-color: #747d8c;
+}
+tbody tr:hover {
+  background-color: #dcdde1;
+}
+tbody td {
+  position: relative;
+}
+
+.pagination {
+  padding: 1rem;
+  border-radius: 22px;
+  font-display: flex;
+  align-items: center;
+}
+
+.custom-button {
+  padding: 12px;
+  background-color: transparent;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+
+.custom-button i {
+  font-size: 28px;
+}
+
+.custom-button i:hover {
+  transform: scale(1.2);
+  transition: 0.3s ease-out;
+}
+
+.pagination-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.pagination-details span {
+  margin-right: 10px;
+}
+
+.input-box {
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  color: #565757;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 2px 12px;
+  margin-right: 10px;
+}
+
+.input-box input {
+  width: 60px;
+}
+
+.input-box input,
+select {
+  background: transparent;
+  padding: 10px;
+  background-color: rgb(255, 255, 255);
+  font-size: 17px;
+  border-radius: 15px;
+}

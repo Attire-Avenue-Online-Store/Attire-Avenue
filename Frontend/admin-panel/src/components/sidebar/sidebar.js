@@ -15,7 +15,7 @@ const Sidebar = () => {
           </li>
           <li>
             <a href="#" className="menu-button">
-              <i className="fa fa-area-chart"> </i>
+              <i className="fa fa-area-chart"></i>
               <span>Analytics</span>
             </a>
           </li>
