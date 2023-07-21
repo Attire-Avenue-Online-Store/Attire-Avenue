@@ -7,10 +7,10 @@ import HeaderTitle from './components/common/headerTitle';
 import DashboardGrid from './components/common/dashboardGrid';
 import Customer from './pages/customers/customer';
 import User from './pages/users/users';
-
 import React, { useState } from 'react';
-
 import './App.css';
+import Product from './pages/products/product';
+import Order from './pages/orders/order';
 
 function App() {
   const [headerTitle, setHeaderTitle] = useState('Dashboard');
@@ -40,10 +40,11 @@ function App() {
       content={
         <MainContentBox>
           <Routes>
-            <Route path="/customers" component={Customer} />
-            <Route path="/users" component={User} />
+            <Route path="/customers" element={<Customer />} />
+            <Route path="/users" element={<User />} />
+            <Route path="/products" element={<Product />} />
+            <Route path="/orders" element={<Order />} />
           </Routes>
-          <Customer />
         </MainContentBox>
       }
     />

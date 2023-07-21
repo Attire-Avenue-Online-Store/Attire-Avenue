@@ -50,7 +50,7 @@ const Sidebar = ({ onClick }) => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/products"
               className="menu-button"
               onClick={() => onClick('Product Details')}
             >
@@ -60,7 +60,7 @@ const Sidebar = ({ onClick }) => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/orders"
               className="menu-button"
               onClick={() => onClick('Order Details')}
             >

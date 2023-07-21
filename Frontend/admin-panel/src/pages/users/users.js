@@ -20,7 +20,7 @@ const User = (props) => {
 
 export default User;
 
-/*  // MUI table
+/* // MUI table
 
 import fakeData from '../../data/MOCK_DATA.json';
 import { COLUMNS } from './columns';
@@ -37,7 +37,7 @@ import {
   Paper,
 } from '@mui/material';
 
-function MaterialTable() {
+function User() {
   const rows = useMemo(() => fakeData, []);
   const columns = useMemo(() => COLUMNS, []);
 
@@ -70,7 +70,6 @@ function MaterialTable() {
   );
 }
 
-export default MaterialTable;
-
+export default User;
 
 */
