@@ -206,11 +206,13 @@ $ npm start
     2. create order create api
 
 29. Create Order Screen
+
     1. create backend api for order/:id
     2. fetch order api in frontend
     3. show order information in 2 cloumns
 
 30. Pay Order By PayPal
+
     1. generate paypal client id
     2. create api to return client id
     3. install react-paypal-js
@@ -222,6 +224,23 @@ $ npm start
     9. create pay order api in backend
 
 31. Display Order History
+
     1. create order screen
     2. create order history api
     3. use api in the frontend
+
+32. Create Profile Screen
+
+    1. get user info from context
+    2. show user information
+    3. create user update api
+    4. update user info
+
+33. Publish To render
+    1. create and config node project
+    2. serve build folder in frontend folder
+    3. Create render account
+    4. Connect it to github
+    5. Create mongodb atlas database
+    6. set database connection in render env variables
+    7. commit and push
