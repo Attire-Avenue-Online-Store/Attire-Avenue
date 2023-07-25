@@ -4,8 +4,8 @@
   "description": "![ATTIRE AVENUE](/frontend/public/images/ATTIRE AVENUE.jpg)",
   "main": "index.js",
   "scripts": {
-    "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
-    "start": "node backend/server.js",
+    "build": "cd Backend && npm install  && cd ../Frontend && npm install && npm run build",
+    "start": "node Backend/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
