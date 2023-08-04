@@ -237,6 +237,7 @@ $ npm start
     4. update user info
 
 33. Publish To render
+
     1. create and config node project
     2. serve build folder in frontend folder
     3. Create render account
@@ -244,3 +245,6 @@ $ npm start
     5. Create mongodb atlas database
     6. set database connection in render env variables
     7. commit and push
+
+34. Add Sidebar and Search Box
+    1. add search box
