@@ -133,3 +133,34 @@ main {
 .active-nav {
   left: 0;
 }
+
+
+
+
+/*footer*/
+footer{
+  background-color: #5bc6f8;
+}
+footer .brand{
+  font-family: var(--lg-font);
+  letter-spacing: 2px;
+}
+footer a{
+  -webkit-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
+  transition: color 0.3s ease;
+}
+footer a:hover{
+  color: var(--pink)!important;
+}
+
+/*carousel*/
+
+.carousel-caption {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+}

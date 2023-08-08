@@ -28,6 +28,7 @@ import SearchScreen from './screens/SearchScreen';
 import Button from 'react-bootstrap/Button';
 import { getError } from './utils';
 import axios from 'axios';
+import Footer from './components/Footer';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -100,7 +101,9 @@ function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav ml-auto" />
               <Navbar.Collapse id="basic-navbar-nav justify-content-end">
                 <Nav className="me-auto w=100 justify-content-end">
-                  <Nav.Link href="#home">Home</Nav.Link>
+                  <LinkContainer to="/">
+                    <Nav.Link href="#home">Home</Nav.Link>
+                  </LinkContainer>
                   <NavDropdown title="Men" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">
                       Shorts
@@ -192,13 +195,13 @@ function App() {
               <Nav.Item key={category}>
                 <LinkContainer
                   to={{
-                    pathname: "/search",
+                    pathname: '/search',
                     search: `?category=${category}`,
                   }}
                   onClick={() => setSidebarIsOpen(false)}
                 >
                   <Nav.Link>{category}</Nav.Link>
-              </LinkContainer>
+                </LinkContainer>
               </Nav.Item>
             ))}
           </Nav>
@@ -226,7 +229,8 @@ function App() {
           </Container>
         </main>
         <footer>
-          <div className="text-center">All rights reserved</div>
+          <Footer />
+          <div className="text-center">@All rights reserved, Attire Avenue</div>
         </footer>
       </div>
     </BrowserRouter>

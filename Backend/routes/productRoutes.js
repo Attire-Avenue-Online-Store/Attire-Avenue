@@ -97,13 +97,6 @@ productRouter.get(
 );
 
 
-// productRouter.get(
-//   '/categories',
-//   expressAsyncHandler(async (req, res) => {
-//     const categories = await Product.find().distinct('category');
-//     res.send(categories);
-//   })
-// );
 
 productRouter.get('/slug/:slug', async (req, res) => {
   const product = await Product.findOne({ slug: req.params.slug });
@@ -121,5 +114,22 @@ productRouter.get('/:id', async (req, res) => {
     res.status(404).send({ message: 'Product Not Found' });
   }
 });
+
+productRouter.get(
+  '/top',
+  expressAsyncHandler(async (req, res) => {
+    const products = await Product.find({}.sort({ rating: -1 }).limit(2));
+
+    res.status(200).json(products);
+  })
+);
+
+productRouter.get(
+  '/categories',
+  expressAsyncHandler(async (req, res) => {
+    const categories = await Product.find().distinct('category');
+    res.send(categories);
+  })
+);
 
 export default productRouter;
