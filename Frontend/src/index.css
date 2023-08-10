@@ -58,14 +58,16 @@ p:last-child {
   height: 90px; /* Adjust the height as needed */
 }
 
+
+
 main {
   flex: 1;
 }
 
 .btn-primary,
 .btn-outline-primary {
-  background-color: rgb(3, 27, 88);
-  color: aliceblue;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .products {
@@ -75,7 +77,7 @@ main {
 }
 
 .rating span {
-  color: #ffc000;
+  color: #505154;
 }
 .product {
   border: 1px black solid;
@@ -108,8 +110,38 @@ main {
 }
 .checkout-steps > div.active {
   border-bottom: 0.2rem solid #f08000;
-  color: #f08000;
+  color: #de831b;
 }
+
+/*navbar brand*/
+.navbar-link-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  margin-right: 250px;
+  font-size: 30px;
+}
+
+.navbar-brand-with-image {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  width: 50px; /* Adjust as needed */
+  height: auto;
+  margin-right: 10px; /* Adjust spacing between text and image */
+}
+
+/*NAVLINK-navdropdown*/
+.custom-nav-link,
+.custom-dropdown-title {
+  font-size: 20px; /* Adjust to your preferred font size */
+  /* Add other styling properties as needed */
+}
+
+
 
 /* sidebar */
 .navbar-brand {
@@ -139,7 +171,7 @@ main {
 
 /*footer*/
 footer{
-  background-color: #5bc6f8;
+  background-color: #93b3c2;
 }
 footer .brand{
   font-family: var(--lg-font);
@@ -149,10 +181,12 @@ footer a{
   -webkit-transition: color 0.3s ease;
   -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
+  
 }
 footer a:hover{
   color: var(--pink)!important;
 }
+
 
 /*carousel*/
 

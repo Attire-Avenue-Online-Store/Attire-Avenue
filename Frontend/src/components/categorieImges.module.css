@@ -1,0 +1,19 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+h2 {
+  font-size: 18pt;
+  text-align: center;
+}
+
+.sectionHeader {
+  margin-bottom: 2.5rem;
+}
+
+.mainContainer {
+  margin: 2rem;
+}

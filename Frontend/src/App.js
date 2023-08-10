@@ -87,24 +87,42 @@ function App() {
             className="bg-body-tertiary"
           >
             <Container>
-              <Button
+              {/* <Button
                 variant="dark"
                 onClick={() => setSidebarIsOpen(!sidebarIsOpen)}
               >
                 <i className="fas fa-bars"></i>
-              </Button>
+              </Button> */}
 
-              <LinkContainer to="/">
+              <LinkContainer to="/" className="navbar-link-container">
                 <Navbar.Brand href="#home">Attire Avenue</Navbar.Brand>
               </LinkContainer>
+
+              {/* <LinkContainer to="/" className="navbar-link-container">
+                <Navbar.Brand className="navbar-brand-with-image">
+                <img
+                    src="Frontend/public/logoattireavenue.png"
+                    alt="Logo"
+                    className="navbar-logo"
+                  />
+                  Attire Avenue
+                  
+                </Navbar.Brand>
+              </LinkContainer> */}
 
               <Navbar.Toggle aria-controls="basic-navbar-nav ml-auto" />
               <Navbar.Collapse id="basic-navbar-nav justify-content-end">
                 <Nav className="me-auto w=100 justify-content-end">
                   <LinkContainer to="/">
-                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Nav.Link href="#home" className="custom-nav-link">
+                      Home
+                    </Nav.Link>
                   </LinkContainer>
-                  <NavDropdown title="Men" id="basic-nav-dropdown">
+                  <NavDropdown
+                    title="Men"
+                    id="basic-nav-dropdown"
+                    className="custom-dropdown-title"
+                  >
                     <NavDropdown.Item href="#action/3.1">
                       Shorts
                     </NavDropdown.Item>
@@ -119,7 +137,11 @@ function App() {
                       Best Sellers
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <NavDropdown title="Women" id="basic-nav-dropdown">
+                  <NavDropdown
+                    title="Women"
+                    id="basic-nav-dropdown"
+                    className="custom-dropdown-title"
+                  >
                     <NavDropdown.Item href="#action/4.1">
                       Legging
                     </NavDropdown.Item>
@@ -134,7 +156,9 @@ function App() {
                       Best Sellers
                     </NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="#questions">Questions?</Nav.Link>
+                  <Nav.Link href="#questions" className="custom-nav-link">
+                    Questions?
+                  </Nav.Link>
                 </Nav>
               </Navbar.Collapse>
 
@@ -228,6 +252,7 @@ function App() {
             </Routes>
           </Container>
         </main>
+        
         <footer>
           <Footer />
           <div className="text-center">@All rights reserved, Attire Avenue</div>

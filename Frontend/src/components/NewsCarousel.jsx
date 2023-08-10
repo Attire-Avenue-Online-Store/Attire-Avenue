@@ -26,13 +26,17 @@ const NewsCarousel = () => {
     fetchTopProducts();
   }, []);
 
+  // const TopProducts = ()=>{
+  //   product =
+  // }
+
   return isLoading ? (
     <LoadingBox />
   ) : error ? (
     <MessageBox variant="danger">{error}</MessageBox>
   ) : (
     <Carousel pause="hover" className="bg-primary mb-4">
-      {products.map((product) => (
+      {/* {products.map((product) => (
         <Carousel.Item key={product._id}>
           <Link to={`/product/${product._id}`}>
             <Image src={product.image} alt={product.name} fluid />
@@ -43,7 +47,33 @@ const NewsCarousel = () => {
             </Carousel.Caption>
           </Link>
         </Carousel.Item>
-      ))}
+      ))} */}
+
+      <Carousel.Item>
+        <Link to="/new-sales-url">
+          <Image
+            src="/images/attireavenuebanner1.jpg"
+            alt="New Product"
+            fluid
+          />
+          <Carousel.Caption className="carousel-caption">
+            <h2>New Product Title ($XX.XX)</h2>
+          </Carousel.Caption>
+        </Link>
+      </Carousel.Item>
+
+      <Carousel.Item>
+        <Link to="/new-product-url">
+          <Image
+            src="/images/attireavenuebanner2.jpg"
+            alt="New Product"
+            fluid
+          />
+          <Carousel.Caption className="carousel-caption">
+            <h2>New Product Title ($XX.XX)</h2>
+          </Carousel.Caption>
+        </Link>
+      </Carousel.Item>
     </Carousel>
   );
 };

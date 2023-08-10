@@ -10,7 +10,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 import NewsCarousel from '../components/NewsCarousel';
 //import data from '../data';
-
+import CategoriesImages from '../components/categorieImges';
 const reducer = (state, action) => {
   switch (action.type) {
     case 'FETCH_REQUEST':
@@ -67,6 +67,9 @@ function HomeScreen() {
           </Row>
         )}
       </div>
+      <section>
+        <CategoriesImages/>
+      </section>
     </div>
   );
 }
