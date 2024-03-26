@@ -2,11 +2,11 @@
 
 ![ATTIRE AVENUE](/frontend/public/images/ATTIRE AVENUE.jpg)
 
-# React Tutorial - Build ECommerce
+
 
 Welcome to our e-commerce website using MERN stack (MongoDB, ExpressJS, React and Node.JS).
 
-## You Will Learn
+
 
 - HTML5 and CSS3: Semantic Elements, CSS Grid, Flexbox
 - React: Components, Props, Events, Hooks, Router, Axios
@@ -65,9 +65,9 @@ $ npm start
 - Run http://localhost:3000/signin
 - Enter admin email and password and click signin
 
-# Lessons
 
-1. Introduction
+
+1. Begin
 2. Install Tools
 3. Create React App
 4. Create Git Repository
